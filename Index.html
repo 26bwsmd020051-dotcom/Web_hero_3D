@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Web Hero 3D</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="hud">
+  <div class="topbar">
+    <div>
+      <b>WEB HERO</b>
+      <span id="mission">Mission: Reach the laboratory</span>
+    </div>
+    <div>HP <span id="hp">100</span> · XP <span id="xp">0</span></div>
+  </div>
+
+  <div id="message">
+    Explore the city. Find the glowing objective.
+  </div>
+
+  <div id="crosshair">+</div>
+</div>
+
+<div id="touch">
+  <div class="pad">
+    <button data-key="w">▲</button>
+    <div>
+      <button data-key="a">◀</button>
+      <button data-key="s">▼</button>
+      <button data-key="d">▶</button>
+    </div>
+  </div>
+
+  <div class="actions">
+    <button id="jump">JUMP</button>
+    <button id="web">WEB</button>
+    <button id="attack">ATTACK</button>
+  </div>
+</div>
+
+<div id="start">
+  <h1>WEB HERO 3D</h1>
+  <p>An original open-city superhero prototype.</p>
+
+  <button id="startBtn">START GAME</button>
+
+  <p class="small">
+    WASD move · Mouse look · Space jump · E web · F attack
+  </p>
+</div>
+
+<script type="importmap">
+{
+  "imports": {
+    "three":
+      "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js",
+    "three/addons/":
+      "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"
+  }
+}
+</script>
+
+<script type="module" src="game.js"></script>
+
+</body>
+</html>
